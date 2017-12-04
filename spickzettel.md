@@ -187,12 +187,64 @@ DMA wichtig für virtualisierung
 - wenn Prozess nicht bereit Prozessor rauszugeben (while 1)
 - mit CTRL+C wird Interrupt geschickt bzw Signal
 
-# L5
+# L6
 ## Bibliotheken
 - dienen dem Komfort
 
 ## Systemaufruf
 - Folie gutes Beispiel
+
+# L7
+## Funktion der Festplatte
+- nur in ganzen Blöcken kommunizieren
+- auf ganzer Platte verteilt volle und leere Blöcke
+
+## Dateien
+- viele kleine, wenig große
+- häufig gelesen, selten geschrieben
+- Mehrfachnutzung : lesen können viele, modifizieren meistens nur einer
+
+## Dateisysteme
+- Bilden Daten und Verzeichnisse von Blockstruktur der Festplatte aber
+- Metadaten auch auf Festplatte
+
+## einfaches Dateisystem
+- gute Folie
+
+## FAT
+- strukturierung in einer Tabelle
+- Bootsektor, Res. Sektoren und FAT haben fixe längen
+- Wurzelverz. variabel
+- Name ist Verzeichnis, darin sind Einträge fixer länge 
+- vom ersten Block zum letzten 0xffff
+
+## Ext2
+- in Zylindergruppen unterteilt
+- wachsen von innen nach außen
+- mehrere Zylinder bilden gruppe (auf Festplatte)
+- Zentrales Element ist Inode (Index node)
+### Inode
+- beschreibung der Dateien
+- memory mapping relativ einfach
+- man muss nicht block lesen um folge-block zu lesen
+
+## Extents
+
+## Konsistenzprüfung
+
+## Fehlertolerante Dateisysteme
+
+# L8
+## 
+
+# L9
+## 
+
+
+
+
+
+
 
 
 
